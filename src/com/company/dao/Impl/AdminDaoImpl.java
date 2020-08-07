@@ -1,5 +1,6 @@
 package com.company.dao.Impl;
 
+import com.alibaba.druid.support.json.JSONUtils;
 import com.company.dao.AdminDao;
 import com.company.domain.Admin;
 import com.company.utils.JDBCUtils;
@@ -8,7 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
+
 
 /**
  * @author lbf
@@ -23,7 +24,6 @@ public class AdminDaoImpl implements AdminDao {
     public Admin getAdminByNameByPass(String adminName, String password) {
         String sql = "select * from admin where adminName = ? and password = ?";
         Admin admin = null;
-
         try {
             conn = JDBCUtils.getConnection();
             pstmt = conn.prepareStatement(sql);
@@ -48,4 +48,53 @@ public class AdminDaoImpl implements AdminDao {
         }
         return admin;
     }
+
+    @Override
+    public void save(Admin admin) {
+        String sql = "insert into admin values(null,?,?)";
+
+        try{
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,admin.getAdminName());
+            pstmt.setString(2,admin.getPassword());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(rs,pstmt,conn);
+        }
+
+    }
+
+    @Override
+    public void update(Admin admin) {
+        String sql = "update admin set adminName = ? where password = ?";
+        try{
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,admin.getAdminName());
+            pstmt.setString(2,admin.getPassword());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(rs,pstmt,conn);
+        }
+    }
+
+    @Override
+    public void remove(Integer id) {
+        String sql = "delete from admin where password = ?";
+        try{
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }

@@ -12,5 +12,28 @@ public class TestAdmin {
         AdminDaoImpl adminDao = new AdminDaoImpl();
         Admin admin = adminDao.getAdminByNameByPass("zhangsan", "123");
         System.out.println(admin);
+        System.out.println("------增加信息--------");
+
+//        Admin admin1 = new Admin(2, "lisi", "333");
+//        Admin admin2 = new Admin(3, "wangwu", "333");
+//        adminDao.save(admin1);
+//        adminDao.save(admin2);
+//        Admin lisi = adminDao.getAdminByNameByPass("lisi", "333");
+//        Admin wangwu = adminDao.getAdminByNameByPass("wangwu", "333");
+//        System.out.println(wangwu);
+//        System.out.println(lisi);
+//        System.out.println("------删除信息--------");
+//
+//        Admin admin2 = new Admin(3, "wangwu", "333");
+//        adminDao.remove(3);
+//        Admin remove = adminDao.getAdminByNameByPass("wangwu", "333");
+//        System.out.println(remove);
+//
+//        System.out.println("------修改信息--------");
+//        Admin admin3 = new Admin(2, "wangwu", "333");
+//        adminDao.update(admin3);
+//        Admin update = adminDao.getAdminByNameByPass("wangwu", "333");
+//        System.out.println(update);
+
     }
 }

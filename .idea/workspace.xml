@@ -27,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaSEcode/Fy_Java9_JavaSE/src/exercise" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,7 +44,20 @@
       <recent name="C:\Users\lbf\Documents\GitHub\elemeAdmin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAdmin">
+  <component name="RunManager" selected="Application.ElmAdmin">
+    <configuration name="ElmAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.ElmAdmin" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="elemeAdmin" />
@@ -68,12 +81,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBusiness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.test.TestBusiness" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.TestAdmin" />
+      <item itemvalue="Application.ElmAdmin" />
+      <item itemvalue="Application.TestBusiness" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElmAdmin" />
+        <item itemvalue="Application.TestBusiness" />
         <item itemvalue="Application.TestAdmin" />
         <item itemvalue="Application.Main" />
       </list>
@@ -89,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596763945954</updated>
-      <workItem from="1596763949376" duration="2354000" />
+      <workItem from="1596763949376" duration="26343000" />
     </task>
     <servers />
   </component>
@@ -97,25 +127,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1596766100776">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1596790691444">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596766100776" />
-    <state width="1478" height="200" key="GridCell.Tab.0.bottom" timestamp="1596766107483">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596790691444" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1596798732775">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596766107483" />
-    <state width="1478" height="200" key="GridCell.Tab.0.center" timestamp="1596766107483">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596798732775" />
+    <state width="1493" height="200" key="GridCell.Tab.0.bottom" timestamp="1596798328654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596766107483" />
-    <state width="1478" height="200" key="GridCell.Tab.0.left" timestamp="1596766107482">
+    <state width="1493" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596798328654" />
+    <state width="1493" height="200" key="GridCell.Tab.0.center" timestamp="1596798328654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596766107482" />
-    <state width="1478" height="200" key="GridCell.Tab.0.right" timestamp="1596766107483">
+    <state width="1493" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596798328654" />
+    <state width="1493" height="200" key="GridCell.Tab.0.left" timestamp="1596798328654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596766107483" />
+    <state width="1493" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596798328654" />
+    <state width="1493" height="200" key="GridCell.Tab.0.right" timestamp="1596798328654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596798328654" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596788479841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596788479841" />
   </component>
 </project>
