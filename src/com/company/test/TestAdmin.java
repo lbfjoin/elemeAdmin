@@ -22,16 +22,16 @@ public class TestAdmin {
 //        Admin wangwu = adminDao.getAdminByNameByPass("wangwu", "333");
 //        System.out.println(wangwu);
 //        System.out.println(lisi);
-//        System.out.println("------删除信息--------");
-//
-//        Admin admin2 = new Admin(3, "wangwu", "333");
-//        adminDao.remove(3);
-//        Admin remove = adminDao.getAdminByNameByPass("wangwu", "333");
-//        System.out.println(remove);
+        System.out.println("------删除信息--------");
+
+        Admin admin3 = new Admin(null, "lisi", "123");
+        adminDao.remove(16);
+        Admin remove = adminDao.getAdminByNameByPass("lisi", "123");
+        System.out.println(remove);
 //
 //        System.out.println("------修改信息--------");
-//        Admin admin3 = new Admin(2, "wangwu", "333");
-//        adminDao.update(admin3);
+//        Admin admin4 = new Admin(2, "wangwu", "333");
+//        adminDao.update(admin4);
 //        Admin update = adminDao.getAdminByNameByPass("wangwu", "333");
 //        System.out.println(update);
 

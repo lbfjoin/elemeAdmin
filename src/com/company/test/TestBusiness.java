@@ -15,7 +15,8 @@ public class TestBusiness {
 //        dao.listBusiness("饺子",null);
         BusinessViewImpl view = new BusinessViewImpl();
         view.listBusinessAll();
-        dao.listBusiness(null,null);
+//        dao.listBusiness(null,null);
+        dao.listBusiness("米饭",null);
 
 
     }

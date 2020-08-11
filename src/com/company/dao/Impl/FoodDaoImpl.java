@@ -22,29 +22,108 @@ public class FoodDaoImpl implements FoodDao {
     private ResultSet rs = null;
 
     @Override
-    public List<Business> listBusiness(String foodName, String foodExplain) {
+    public List<Food> listFood(Integer businessId) {
         List<Food> list = new ArrayList<>();
-        StringBuffer sql = new StringBuffer("select * from food where 1 = 1");
-        if (foodName != null && foodName.equals("")){
-            sql.append("and foodName like '%").append(foodName).append("%'");
-            System.out.println(sql);
-        }
-        if (foodExplain != null && foodExplain.equals("")){
-            sql.append("and foodExplain like '%").append(foodExplain).append("%'");
-            System.out.println(sql);
-        }
+        String sql = "select * from food where businessId = ?";
         try {
             conn = JDBCUtils.getConnection();
-            pstmt = conn.prepareStatement(sql.toString());
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,businessId);
             rs = pstmt.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 Food food = new Food();
-               food.setFoodId(rs.getInt("foodId"));
-               food.setFoodName(rs.getString("foodNameq"));
+                food.setFoodId(rs.getInt("foodId"));
+                food.setFoodName(rs.getString("foodName"));
+                food.setFoodExplain(rs.getString("foodExplain"));
+                food.setFoodPrice(rs.getDouble("foodPrice"));
+                food.setBusinessId(rs.getInt("businessId"));
+                list.add(food);
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            JDBCUtils.close(rs, pstmt, conn);
         }
-        return null;
+        return list;
+    }
+
+    @Override
+    public void saveFood(Food food) {
+        String sql = "insert into food(foodName,foodPrice,businessId) values (? , ?, ?)";
+        try {
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, food.getFoodName());
+            pstmt.setDouble(2, food.getFoodPrice());
+            pstmt.setInt(3,food.getBusinessId());
+            pstmt.executeUpdate();
+            System.out.println(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JDBCUtils.close(null, pstmt, conn);
+        }
+
+    }
+
+    @Override
+    public void removeFood(Integer foodId) {
+        String sql = "delete from food where foodId = ?";
+        try {
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, foodId);
+            pstmt.executeUpdate();
+            System.out.println(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JDBCUtils.close(null, pstmt, conn);
+        }
+    }
+
+    @Override
+    public void updateFood(Food food) {
+        String sql = "update food set foodName = ? ,foodExplain = ? , foodPrice = ? where foodId = ?";
+        try {
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,food.getFoodName());
+            pstmt.setString(2,food.getFoodExplain());
+            pstmt.setDouble(3,food.getFoodPrice());
+            pstmt.setInt(4,food.getFoodId());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(null,pstmt,conn);
+        }
+
+    }
+
+    @Override
+    public Food getFoodById(Integer foodId) {
+        String sql = "select * from food where foodId = ?";
+        Food food = null;
+        try {
+            conn = pstmt.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,foodId);
+            rs = pstmt.executeQuery();
+            while (rs.next()){
+                food = new Food();
+                food.setFoodId(rs.getInt(1));
+                food.setFoodName(rs.getString(2));
+                food.setFoodExplain(rs.getString(3));
+                food.setFoodPrice(rs.getDouble(4));
+                food.setBusinessId(rs.getInt(5));
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(rs,pstmt,conn);
+        }
+        return food;
     }
 }
