@@ -1,19 +1,19 @@
-package sell.doamain;
+package sell.domain;
 
 /**
  * @author lbf
  * @date 2020/8/7 9:44
  * 用户表实体类
  */
-public class Admin1 {
+public class Admin {
     private Integer adminId;
     private String adminName;
     private String password;
 
-    public Admin1() {
+    public Admin() {
     }
 
-    public Admin1(Integer adminId, String adminName, String password) {
+    public Admin(Integer adminId, String adminName, String password) {
         this.adminId = adminId;
         this.adminName = adminName;
         this.password = password;

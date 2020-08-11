@@ -30,7 +30,7 @@ public class AdminDaoImpl implements AdminDao {
             pstmt.setString(1,adminName);
             pstmt.setString(2,password);
             rs = pstmt.executeQuery();
-
+            System.out.println(sql);
             while (rs.next()){
                 admin = new Admin();
                 admin.setAdminId(rs.getInt(1));

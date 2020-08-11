@@ -1,11 +1,11 @@
-package sell.doamain;
+package sell.domain;
 
 /**
  * @author lbf
  * @date 2020/8/7 14:39
  * 商家实体类
  */
-public class Business1 {
+public class Business {
     private Integer businessId;
     private String password;
     private String businessName;
@@ -14,10 +14,10 @@ public class Business1 {
     private Double starPrice;
     private Double deliveryPrice;
 
-    public Business1() {
+    public Business() {
     }
 
-    public Business1(Integer businessId, String password, String businessName, String businessAddress, String businessExplain, Double starPrice, Double deliveryPrice) {
+    public Business(Integer businessId, String password, String businessName, String businessAddress, String businessExplain, Double starPrice, Double deliveryPrice) {
         this.businessId = businessId;
         this.password = password;
         this.businessName = businessName;
@@ -83,16 +83,25 @@ public class Business1 {
         this.deliveryPrice = deliveryPrice;
     }
 
-    @Override
-    public String toString() {
-        return "Business{" +
-                "businessId=" + businessId +
-                ", password='" + password + '\'' +
-                ", businessName='" + businessName + '\'' +
-                ", businessAddress='" + businessAddress + '\'' +
-                ", businessExplain='" + businessExplain + '\'' +
-                ", starPrice=" + starPrice +
-                ", deliveryPrice=" + deliveryPrice +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Business{" +
+//                "businessId=" + businessId +
+//                ", password='" + password + '\'' +
+//                ", businessName='" + businessName + '\'' +
+//                ", businessAddress='" + businessAddress + '\'' +
+//                ", businessExplain='" + businessExplain + '\'' +
+//                ", starPrice=" + starPrice +
+//                ", deliveryPrice=" + deliveryPrice +
+//                '}';
+//    }
+@Override
+public String toString() {
+    return "\n商家编号："+this.businessId+
+            "\n商家名称："+this.businessName+
+            "\n商家地址："+this.businessAddress+
+            "\n商家介绍："+this.businessExplain+
+            "\n起送费："+this.starPrice+
+            "\n配送费："+this.deliveryPrice;
+}
 }
