@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sell/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaSEcode/Fy_Java9_JavaSE" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,55 +50,17 @@
       <recent name="C:\Users\lbf\Documents\GitHub\elemeAdmin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAdmin">
-    <configuration name="BusinessTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sell.test.BusinessTest" />
+  <component name="RunManager" selected="Application.TestBusiness">
+    <configuration name="Count" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Count" />
       <module name="elemeAdmin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sell.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElmAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.ElmAdmin" />
+    <configuration name="Foo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Foo" />
       <module name="elemeAdmin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElmBusiness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.ElmBusiness" />
-      <module name="elemeAdmin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAdmin (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.test.TestAdmin" />
-      <module name="elemeAdmin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,20 +78,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBusiness (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.test.TestBusiness" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBusiness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sell.test.TestBusiness" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sell.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.BusinessTest" />
-      <item itemvalue="Application.ElmBusiness" />
-      <item itemvalue="Application.ElmAdmin" />
       <item itemvalue="Application.TestAdmin" />
-      <item itemvalue="Application.TestAdmin (1)" />
+      <item itemvalue="Application.TestBusiness" />
+      <item itemvalue="Application.TestBusiness (1)" />
+      <item itemvalue="Application.Foo" />
+      <item itemvalue="Application.Count" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBusiness" />
+        <item itemvalue="Application.Count" />
+        <item itemvalue="Application.Foo" />
+        <item itemvalue="Application.TestBusiness (1)" />
         <item itemvalue="Application.TestAdmin" />
-        <item itemvalue="Application.TestAdmin (1)" />
-        <item itemvalue="Application.ElmBusiness" />
-        <item itemvalue="Application.ElmAdmin" />
-        <item itemvalue="Application.BusinessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +136,10 @@
       <workItem from="1597015746241" duration="32710000" />
       <workItem from="1597140254405" duration="1035000" />
       <workItem from="1597148131744" duration="4374000" />
+      <workItem from="1597189430547" duration="671000" />
+      <workItem from="1597217426577" duration="10260000" />
+      <workItem from="1597362599932" duration="1902000" />
+      <workItem from="1597365496414" duration="617000" />
     </task>
     <servers />
   </component>
@@ -155,34 +147,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1597151584458">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1597235769139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597151584458" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597235769139" />
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597149932498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1597149932498" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1597148143387">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1597366244816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597148143387" />
-    <state width="1478" height="248" key="GridCell.Tab.0.bottom" timestamp="1597188883624">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597366244816" />
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1597365382174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597188883624" />
-    <state width="1478" height="248" key="GridCell.Tab.0.center" timestamp="1597188883624">
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597365382174" />
+    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1597365382174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="248" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597188883624" />
-    <state width="1478" height="248" key="GridCell.Tab.0.left" timestamp="1597188883623">
+    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597365382174" />
+    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1597365382173">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="248" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597188883623" />
-    <state width="1478" height="248" key="GridCell.Tab.0.right" timestamp="1597188883624">
+    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597365382173" />
+    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1597365382174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="248" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597188883624" />
+    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597365382174" />
     <state width="1478" height="248" key="GridCell.Tab.1.bottom" timestamp="1597188883624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -199,10 +191,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1478" height="248" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597188883624" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1597189430019">
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1597365494983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597189430019" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597365494983" />
+    <state x="178" y="28" key="new project wizard" timestamp="1597235853865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="28" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1597235853865" />
     <state x="472" y="45" key="refactoring.ChangeSignatureDialog" timestamp="1597040524186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
