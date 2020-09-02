@@ -21,8 +21,10 @@ public class TestBusiness {
         Business business = new Business();
 //       business.setBusinessName("heiheihei");
 //        dao.saveBusiness(business);
-        business.setBusinessId(10009);
-        business.setBusinessExplain("hhhh");
-        dao.updateBusiness(business);
+//        business.setBusinessId(10010);
+//        business.setBusinessExplain("hhhh");
+//        dao.updateBusiness(business);
+        business.setBusinessId(10010);
+        dao.removeBusiness(business);
     }
 }

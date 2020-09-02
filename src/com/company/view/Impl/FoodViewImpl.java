@@ -115,6 +115,8 @@ public class FoodViewImpl implements FoodView {
                 System.out.println("请输入新的食品价格：");
                 food.setFoodPrice(input.nextDouble());
             }
+            dao.updateFood(food);
+            System.out.println("修改食品成功");
 
 
         }

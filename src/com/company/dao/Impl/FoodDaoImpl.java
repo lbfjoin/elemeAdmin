@@ -106,7 +106,7 @@ public class FoodDaoImpl implements FoodDao {
         String sql = "select * from food where foodId = ?";
         Food food = null;
         try {
-            conn = pstmt.getConnection();
+            conn = JDBCUtils.getConnection();
             pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1,foodId);
             rs = pstmt.executeQuery();

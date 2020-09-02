@@ -1,15 +1,15 @@
-package com.company;
+package sell;
 
 import com.company.domain.Admin;
 import com.company.view.AdminView;
 import com.company.view.Impl.AdminViewImpl;
-import com.company.view.Impl.BusinessViewImpl;
+import sell.view.Impl.BusinessViewImpl;
 
 import java.util.Scanner;
 
 /**
  * @author lbf
- * @date 2020/8/7 11:31
+ * @date 2020/8/14 19:22
  */
 public class ElmAdmin {
     public static void main(String[] args) {
@@ -27,18 +27,17 @@ public class ElmAdmin {
         AdminView adminView = new AdminViewImpl();
         Admin admin = adminView.login();
         BusinessViewImpl view = new BusinessViewImpl();
-        if (admin != null) {
+        if (admin != null){
             int menu = 0;
-                System.out.println("欢迎来到饿了么商家管理系统~");
-            while (menu!= 5){
-            //创建一个菜单
-            System.out.println("========= 1.所有商家列表=2.搜索商家=3.新建商家=4.删除商家=5.退出系统 =========");
-            System.out.println("请选择相应的菜单编号");
-            menu = input.nextInt();
-                switch (menu) {
+            System.out.println("欢迎来到饿了么商家管理系统~");
+            while (menu!=5){
+                System.out.println("========= 1.所有商家列表=2.搜索商家=3.新建商家=4.删除商家=5.退出系统 =========");
+                System.out.println("请选择相应的菜单编号");
+                menu = input.nextInt();
+                switch (menu){
                     case 1:
                         view.listBusinessAll();
-                        break ;
+                        break;
                     case 2:
                         view.listBusinessBySearch();
                         break;
@@ -52,14 +51,12 @@ public class ElmAdmin {
                         System.out.println("========= 欢迎下次光临饿了么系统 =========");
                         break;
                     default:
-                        System.out.println("========= 没有此菜单项 =========");
+                        System.out.println("+++++++");
                         break;
                 }
             }
-
-        } else {
-            System.out.println("账号或密码错误请重新输入");
         }
-
+        else
+            System.out.println("密码或用户名错误，请重新输入");
     }
 }
